@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding:40%;
+    background-color: rgb(250, 209, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    
+    left: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+img {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40px;
+    z-index: 2;
+    
+    
+    
+}
+
+.clock {
+    position:relative;
+    background-color: rgb(241, 229, 229);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid rgb(2, 2, 39);
+    box-shadow: 2px 2px 10px rgb(34, 17, 17);
+    
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 7);
+}
+
+.twelve {
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* .three {
+    left: 93%;
+    top: 155px;
+} */
+
+.three {
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* .six {
+    left: 50%;
+    bottom: 6px;
+    transform: translateX();
+    -webkit-transform: translateX();
+    -moz-transform: translateX();
+    -ms-transform: translateX();
+    -o-transform: translateX();
+} */
+
+.six {
+    left: 50%;
+    bottom: 6px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* .nine {
+    left: 6px;
+    bottom: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+} */
+
+.nine {
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.arrows {
+    display: flex;
+    width: 100%;
+    height: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: rgb(91, 88, 88);
+    border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   
+    box-shadow: 1px 1px 2px rgb(15, 14, 14);
+    z-index: 4;
+    -webkit-border-radius: 50%;
+} */
+
+.arrows div {
+    background-color: white;
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    /**/
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    -ms-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgb(38, 35, 35);
+}
+
+.arrows .hour {
+    height: 80px;
+    transform: rotate(50deg);
+    /*-webkit-transform: rotate(30deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    */
+    background-color: black;
+    transform: rotate(50deg);
+}
+
+.arrows .minute {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.arrows .second {
+    height: 120px;
+    transform: rotate(250deg);
+    -webkit-transform: rotate(250deg);
+    -moz-transform: rotate(250deg);
+    -ms-transform: rotate(250deg);
+    transform: rotate(250deg);
+    background-color: rgb(199, 29, 17);
+}
+
+
+
+/* Digital clock */
+
+.Dclock{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+    padding: 40%;
+}
+
+.Dclock div{
+    
+    width: 200px;
+    height: 100px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dclock div > span{
+    position: absolute;
+    font-size: 50px;
+
+}
+.Dclock div > span:nth-child(1){
+    color: gainsboro;
+
+}
+
+.Dclock > span {
+    color: black;
+    font-size: 100px;
+    margin: 0px 15px;
+    filter: drop-shadow(0px 0px 8px #aaa);
+}
+
+
